@@ -10,10 +10,6 @@ class Solution {
             }
         }
 
-        //  if(s.length()==1){
-        //     return 1;
-        // }
-
 
         for(int i=k;i>=0;i--){
                 if(s.charAt(i)==' '){
