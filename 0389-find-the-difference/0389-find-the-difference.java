@@ -10,12 +10,15 @@ class Solution {
               arr[ch-'a']--;
         }
 
+        char p=' ';
+
         for(int i=0;i<arr.length;i++){
             if(arr[i]==1){
-                  return (char)(i+'a');
+                p=(char)(i+'a');
+                break;
             }
         }
 
-        return ' ';
+        return p;
     }
 }
