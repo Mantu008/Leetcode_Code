@@ -1,25 +1,33 @@
 class Solution {
     public List<List<Integer>> subsetsWithDup(int[] nums) {
-        List<List<Integer>> resultList = new ArrayList<>();
+        int n=nums.length;
         Arrays.sort(nums);
-        int start=0;
-        solve(resultList, new ArrayList<>(), nums, start);
+        ArrayList<Integer>list=new ArrayList<>();
+        List<List<Integer>> resultList = new ArrayList<>(); 
+        int idx=0;
+        Printsubn(idx,nums,n,list,resultList);
         return resultList;
     }
 
-    public static void solve(List<List<Integer>> resultSets, List<Integer> tempSet,int[] nums, int start){
-        if(!resultSets.contains(tempSet)){
-            resultSets.add(new ArrayList<>(tempSet)); 
-        }
-        for(int i=start;i<nums.length;i++){
-            // Case of including the number
-            tempSet.add(nums[i]);
-
-          // Backtrack the new subset
-           solve(resultSets, tempSet, nums,i+1);
-
-         // Case of not-including the number
-          tempSet.remove(tempSet.size() - 1);
-        }
+   public static void Printsubn(int idx,int arr[],int n,ArrayList<Integer>list, List<List<Integer>> resultList){
+         if(idx>=n){
+                  if(!resultList.contains(list)){
+                          resultList.add(new ArrayList<>(list));
+                     }
+               return;
+         }
+         list.add(arr[idx]);
+         Printsubn(idx+1,arr,n,list,resultList);
+         int last=list.size()-1;
+         list.remove(last);
+         Printsubn(idx+1,arr,n,list,resultList);
+         return;
     }
 }
+
+
+
+
+
+        
+     
