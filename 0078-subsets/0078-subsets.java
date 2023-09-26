@@ -16,8 +16,8 @@ class Solution {
          }
          list.add(arr[idx]);
          Printsubn(idx+1,arr,n,list,resultList);
-         int size=list.size()-1;
-         list.remove(size);
+         int last=list.size()-1;
+         list.remove(last);
          Printsubn(idx+1,arr,n,list,resultList);
          return;
     }
