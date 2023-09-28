@@ -11,10 +11,10 @@ class Solution {
 
    public static void Printsubn(int idx,int arr[],int n,ArrayList<Integer>list, List<List<Integer>> resultList){
          if(idx>=n){
-                  if(!resultList.contains(list)){
-                          resultList.add(new ArrayList<>(list));
-                     }
-               return;
+            if(!resultList.contains(list)){
+                resultList.add(new ArrayList<>(list));
+              }
+            return;
          }
          list.add(arr[idx]);
          Printsubn(idx+1,arr,n,list,resultList);
