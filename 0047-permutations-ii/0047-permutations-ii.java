@@ -5,7 +5,6 @@ class Solution {
         List<List<Integer>> resultList = new ArrayList<>(); 
         boolean freq[]=new boolean[nums.length];
         Printprmution(nums,list,resultList,freq);
-
         return resultList;
         
     }
