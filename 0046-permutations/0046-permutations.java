@@ -20,7 +20,7 @@ class Solution {
                      Printprmution(arr,list,resultList,freq);
                      list.remove(list.size()-1);
                      freq[i]=false;
-                }
+                } 
            }
 
     }
