@@ -16,7 +16,7 @@ class Solution {
              if(list.size()==0){             //when size of list is empty than break this loop
                     break;
              }
-             k=k%fact;                      //override k value after each ittration for next kth parmutation
+             k=k%fact;                      //override k value after each ittration for next kth parmutation siquence
              fact=fact/list.size();         //override the factrioal value for range kth parmutation range
         }
 
