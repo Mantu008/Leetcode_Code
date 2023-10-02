@@ -26,10 +26,9 @@ class Solution {
     }
 
         void solve(Node node){
-            result.add(node.val);   
-          if(node.children==null) return;      //if given node has not any child than return as it is
-                       //if child is present then add in arraylist the child value
-          for(Node child:node.children){       
+          result.add(node.val);   
+          if(node.children==null) return;   //if given node has not any child than return as it is               
+          for(Node child:node.children){    //if child is present then add in arraylist the child value  
                solve(child);
           }
     }
