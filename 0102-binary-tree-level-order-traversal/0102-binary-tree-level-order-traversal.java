@@ -16,13 +16,12 @@
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
     List<List<Integer>> resultList = new ArrayList<>();
-    ArrayList<Integer>list=new ArrayList<>();
     
     if(root==null){
       return resultList;
     }
     
-    levalOrderTraversel(root,resultList,list);
+    levalOrderTraversel(root,resultList,new ArrayList<>());
 
     return  resultList;
 
