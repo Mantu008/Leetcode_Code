@@ -24,32 +24,31 @@ class Solution {
     levalOrderTraversel(root,resultList,new ArrayList<>());
 
     return  resultList;
-
-
-
  }
     
 
-    public static void levalOrderTraversel(TreeNode node, List<List<Integer>> resultList,ArrayList<Integer>list){
-        Queue<TreeNode> q=new ArrayDeque<>();
-        q.add(node);
+public static void levalOrderTraversel(TreeNode node, List<List<Integer>> resultList,ArrayList<Integer>list){
+     Queue<TreeNode> q=new ArrayDeque<>();
+        q.add(node);  
+        
         while(q.size()>0){
            int count=q.size();
            list=new ArrayList<>();
            for(int i=0;i<count;i++){
-             if(q.peek().left!=null){
-                q.add(q.peek().left);
+             node=q.remove();
+             list.add(node.val);
+             
+             if(node.left!=null){
+                q.add(node.left);
              }
             
-             if(q.peek().right!=null){
-                q.add(q.peek().right);
+             if(node.right!=null){
+                q.add(node.right);
              }
-             list.add(q.remove().val);
            }
-            resultList.add(new ArrayList<>(list));
+           resultList.add(new ArrayList<>(list));
         }
-         
-         
     }
+         
 
 }
