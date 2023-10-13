@@ -24,7 +24,7 @@ class Solution {
                return true;
           }
 
-          if(p==null || q==null){
+          if(p==null || q==null || p.val!=q.val){
               return false;
           }
 
