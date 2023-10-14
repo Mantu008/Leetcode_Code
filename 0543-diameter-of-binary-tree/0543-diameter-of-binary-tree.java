@@ -15,7 +15,7 @@
  */
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
-      DiaPair p=diameter1(root);
+      DiaPair p=diameter1(root);                                         //that code time complexity is O(n) which is good
       return p.dia;
     }
 
