@@ -15,8 +15,8 @@
  */
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
-      DiaPair p=diameter1(root);
-      return p.dia;
+       return (diameter1(root)).dia;
+    //   return p.dia;
     }
 
     public static class DiaPair{
