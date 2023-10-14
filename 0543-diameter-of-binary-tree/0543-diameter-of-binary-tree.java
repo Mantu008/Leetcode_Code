@@ -13,8 +13,21 @@
  *     }
  * }
  */
+// class Solution {
+//     public int diameterOfBinaryTree(TreeNode root) {
+         
+//     }
+// }
+
+
+
+
+
+
+
+
 class Solution {
-    public int diameterOfBinaryTree(TreeNode root) {
+    public int diameterOfBinaryTree(TreeNode root) {             //that code time complexity is O(n^2) that is not good
         return dia(root);
     }
 
