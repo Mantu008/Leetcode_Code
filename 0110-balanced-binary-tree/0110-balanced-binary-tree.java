@@ -16,7 +16,7 @@
 class Solution {
      public boolean isBal=true;
     public boolean isBalanced(TreeNode root) {
-        int p=isBalance(root);
+        isBalance(root);
         return isBal;
     }
 
