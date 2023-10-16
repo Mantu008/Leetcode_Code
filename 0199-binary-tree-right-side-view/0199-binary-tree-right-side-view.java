@@ -16,20 +16,19 @@
 
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-       List<List<Integer>> resultList = new ArrayList<>();
-       ArrayList<Integer> ans=new ArrayList<>();
+     ArrayList<Integer> ans=new ArrayList<>();
     
     if(root==null){
       return ans;
     }
     
-    levalOrderTraversel(root,resultList,new ArrayList<>(),ans);
+    levalOrderTraversel(root,new ArrayList<>(),ans);
 
     return  ans;
  }
     
 
-public static void levalOrderTraversel(TreeNode node, List<List<Integer>> resultList,ArrayList<Integer>list,ArrayList<Integer> ans){
+public static void levalOrderTraversel(TreeNode node,ArrayList<Integer>list,ArrayList<Integer> ans){
      Queue<TreeNode> q=new ArrayDeque<>();       //creat queue for store left and right node of particular root
         q.add(node);  
         
@@ -50,7 +49,6 @@ public static void levalOrderTraversel(TreeNode node, List<List<Integer>> result
            }
            System.out.println(list.get(list.size()-1));
            ans.add(list.get(list.size()-1));
-           resultList.add(list);               //atlast add list in resultlist which store list of list
         }
     }
          
