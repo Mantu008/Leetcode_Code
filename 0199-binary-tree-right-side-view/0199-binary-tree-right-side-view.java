@@ -16,20 +16,43 @@
 
 class Solution {
     public List<Integer> rightSideView(TreeNode root) {
-        List<Integer>list = new ArrayList();
-        recursion(root,list,0);
-        return list;
+       List<List<Integer>> resultList = new ArrayList<>();
+       ArrayList<Integer> ans=new ArrayList<>();
+    
+    if(root==null){
+      return ans;
     }
-    public void recursion (TreeNode root, List<Integer> list, int depth) {
-        if (root==null)
-        return;
+    
+    levalOrderTraversel(root,resultList,new ArrayList<>(),ans);
 
-        if(depth==list.size())
-        list.add(root.val);
+    return  ans;
+ }
+    
 
-        recursion(root.right,list,depth+1);
-        recursion(root.left,list,depth+1);
-
-
+public static void levalOrderTraversel(TreeNode node, List<List<Integer>> resultList,ArrayList<Integer>list,ArrayList<Integer> ans){
+     Queue<TreeNode> q=new ArrayDeque<>();       //creat queue for store left and right node of particular root
+        q.add(node);  
+        
+        while(q.size()>0){                       //this looop will run up till queue in not empty
+           int count=q.size();
+           list=new ArrayList<>();              //for each level node reset the list for storing new element in levelwise
+           for(int i=0;i<count;i++){
+             node=q.remove();                   //remove top queue node
+             list.add(node.val);                //add removing node value in list 
+             
+             if(node.left!=null){               //if node.left is not null then incert into queue else nothing doing
+                q.add(node.left);
+             }
+            
+             if(node.right!=null){              //if node.right is not null then incert into queue  else nothing doing
+                q.add(node.right);
+             }
+           }
+           System.out.println(list.get(list.size()-1));
+           ans.add(list.get(list.size()-1));
+           resultList.add(list);               //atlast add list in resultlist which store list of list
+        }
     }
+         
+
 }
