@@ -45,8 +45,7 @@ public static void levalOrderTraversel(TreeNode node, List<List<Integer>> result
              if(node.right!=null){              //if node.right is not null then incert into queue  else nothing doing
                 q.add(node.right);
              }
-           }
-           System.out.println(list.get(list.size()-1));
+           } 
            resultList.add(list);               //atlast add list in resultlist which store list of list
         }
     }
