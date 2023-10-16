@@ -15,7 +15,7 @@
  */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-    List<List<Integer>> resultList = new ArrayList<>();
+   List<List<Integer>> resultList = new ArrayList<>();
     
     if(root==null){
       return resultList;
@@ -45,7 +45,7 @@ public static void levalOrderTraversel(TreeNode node, List<List<Integer>> result
              if(node.right!=null){              //if node.right is not null then incert into queue  else nothing doing
                 q.add(node.right);
              }
-           } 
+           }
            resultList.add(list);               //atlast add list in resultlist which store list of list
         }
     }
