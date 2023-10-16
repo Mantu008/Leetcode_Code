@@ -47,7 +47,6 @@ public static void levalOrderTraversel(TreeNode node,ArrayList<Integer>list,Arra
                 q.add(node.right);
              }
            }
-           System.out.println(list.get(list.size()-1));
            ans.add(list.get(list.size()-1));
         }
     }
