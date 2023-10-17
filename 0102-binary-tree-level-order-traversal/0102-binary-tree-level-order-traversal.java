@@ -15,40 +15,38 @@
  */
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
-   List<List<Integer>> resultList = new ArrayList<>();
-    
-    if(root==null){
-      return resultList;
-    }
-    
-    levalOrderTraversel(root,resultList,new ArrayList<>());
-
-    return  resultList;
- }
-    
-
-public static void levalOrderTraversel(TreeNode node, List<List<Integer>> resultList,ArrayList<Integer>list){
-     Queue<TreeNode> q=new ArrayDeque<>();       //creat queue for store left and right node of particular root
-        q.add(node);  
-        
-        while(q.size()>0){                       //this looop will run up till queue in not empty
-           int count=q.size();
-           list=new ArrayList<>();              //for each level node reset the list for storing new element in levelwise
-           for(int i=0;i<count;i++){
-             node=q.remove();                   //remove top queue node
-             list.add(node.val);                //add removing node value in list 
-             
-             if(node.left!=null){               //if node.left is not null then incert into queue else nothing doing
-                q.add(node.left);
-             }
-            
-             if(node.right!=null){              //if node.right is not null then incert into queue  else nothing doing
-                q.add(node.right);
-             }
-           }
-           resultList.add(list);               //atlast add list in resultlist which store list of list
+        List<List<Integer>> resultlist=new ArrayList<>();
+        List<Integer> list=new ArrayList<>();
+        if(root==null){
+            return resultlist;
         }
-    }
-         
+        
+        lrvellorder(root,resultlist,list);
 
+        return resultlist;
+    }
+
+    public static void  lrvellorder(TreeNode root,List<List<Integer>> resultlist,List<Integer> list){
+       Queue<TreeNode> q=new ArrayDeque<>();
+       q.add(root);
+
+      while(!q.isEmpty()){
+          int size=q.size();
+          list=new ArrayList<>();
+          for(int i=0;i<size;i++){                                //it is use for store each level element in seprate way 
+              TreeNode temp=q.remove();
+              list.add(temp.val);
+
+              if(temp.left!=null){
+                  q.add(temp.left);
+              }
+
+              if(temp.right!=null){
+                  q.add(temp.right);
+              }
+          }
+            resultlist.add(list);
+      }
+
+    }
 }
