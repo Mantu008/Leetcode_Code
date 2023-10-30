@@ -15,50 +15,17 @@
  */
 class Solution {
     public int maxDepth(TreeNode root) {
-        return height(root);
+        return depth(root);
     }
 
-  public static int height(TreeNode node){
+    public static int depth(TreeNode node){
+       if(node==null){
+           return 0;
+       }
 
-    if(node==null){
-         return 0; //  -1 for eges and 0 for nodes
+       int lh=depth(node.left);
+       int rh=depth(node.right);
+
+       return 1+(Math.max(lh,rh));
     }
-
-    int lh=height(node.left);
-    int rh=height(node.right);
-    int th=Math.max(lh, rh)+1;
-
-    return th;
-
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
