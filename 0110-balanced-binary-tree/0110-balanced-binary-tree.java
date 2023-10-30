@@ -14,25 +14,26 @@
  * }
  */
 class Solution {
-     public boolean isBal=true;
+     boolean isgap=true;
     public boolean isBalanced(TreeNode root) {
-        int p=isBalance(root);
-        return isBal;
+          balance(root);
+          return isgap;
     }
+    
+    public int balance(TreeNode node){
+       if(node==null){
+           return 0;
+       }
 
+       int lh=balance(node.left);
+       int rh=balance(node.right);
 
-    public  int isBalance(TreeNode node){
-          if(node==null){
-              return 0;
-          }
+       int gap=Math.abs(lh-rh);
+       if(gap>1){
+          isgap=false;     
+       }
 
-          int lh=isBalance(node.left);
-          int rh=isBalance(node.right);
-          int gap=Math.absExact(lh-rh);                       // it is for checking balance tree condition 
-          if(gap>1){
-              isBal=false;
-          }
-          int th=Math.max(lh, rh)+1;
-          return th;
+       return 1+Math.max(lh,rh);
+
     }
 }
