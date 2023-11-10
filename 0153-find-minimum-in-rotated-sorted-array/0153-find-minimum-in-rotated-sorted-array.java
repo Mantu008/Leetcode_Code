@@ -19,7 +19,7 @@ public static int search(int arr[]){
         int mid = start + (end - start) / 2;
 
         // Check if mid is the minimum element
-        if (mid > 0 && arr[mid] < arr[mid - 1]) {
+        if (mid > 0 && arr[mid] < arr[mid - 1] && arr[mid]<arr[mid+1]) {
             return arr[mid];
         }
         // Check if mid+1 is the minimum element
