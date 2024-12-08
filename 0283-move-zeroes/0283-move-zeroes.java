@@ -1,22 +1,20 @@
 class Solution {
     public void moveZeroes(int[] nums) {
-         int n=nums.length;
-         remove(nums,n);
+         movAllZeroTOENd(nums);
     }
 
-     public static void remove(int arr[],int n){
-          int j=0;
-          for(int i=0;i<n;i++){
-               if(arr[i]==0){
-                   continue;
-               }else{
-                  arr[j]=arr[i];
-                  j++;
-               }
-          }   
+     public static void movAllZeroTOENd(int[] arr) {
+        int nonZeroIndex = 0;
 
-          for(int i=j;i<n;i++){
-                      arr[i]=0;
-          }
-}
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != 0) {
+                arr[nonZeroIndex] = arr[i];
+                nonZeroIndex++;
+            }
+        }
+
+        for (int i = nonZeroIndex; i < arr.length; i++) {
+            arr[i] = 0;
+        }
+    }
 }
