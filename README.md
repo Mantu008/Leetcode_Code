@@ -27,4 +27,8 @@
 |  |
 | ------- |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
+## Linked List
+|  |
+| ------- |
+| [0237-delete-node-in-a-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0237-delete-node-in-a-linked-list) |
 <!---LeetCode Topics End-->
