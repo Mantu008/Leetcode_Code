@@ -17,6 +17,7 @@
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0141-linked-list-cycle](https://github.com/Mantu008/Leetcode_Code/tree/master/0141-linked-list-cycle) |
 | [0283-move-zeroes](https://github.com/Mantu008/Leetcode_Code/tree/master/0283-move-zeroes) |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 | [0908-middle-of-the-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0908-middle-of-the-linked-list) |
@@ -24,6 +25,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0141-linked-list-cycle](https://github.com/Mantu008/Leetcode_Code/tree/master/0141-linked-list-cycle) |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0442-find-all-duplicates-in-an-array) |
 ## Sorting
@@ -34,6 +36,7 @@
 |  |
 | ------- |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0019-remove-nth-node-from-end-of-list) |
+| [0141-linked-list-cycle](https://github.com/Mantu008/Leetcode_Code/tree/master/0141-linked-list-cycle) |
 | [0237-delete-node-in-a-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0237-delete-node-in-a-linked-list) |
 | [0908-middle-of-the-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
