@@ -10,56 +10,43 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-        ListNode temps=head;
+        //find size
+        ListNode temp=head;
         int size=0;
+        while(temp!=null){
+           size++;
+           temp=temp.next;
+        }        
 
-        //find size of list
-
-        while(temps!=null){
-             size++;
-             temps=temps.next;
+        //find mid of linkedlist 
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null && fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
         }
 
-        //find rightmiddle element of list
-
-        ListNode s=head;
-        ListNode f=head;
-
-        while(f!=null && f.next!=null){
-              s=s.next;
-              f=f.next.next;
+        //reverce half of list
+        ListNode prev=null;
+        ListNode curr=head;
+        while(curr!=slow){
+            ListNode next=curr.next;
+            curr.next=prev;
+            prev=curr;
+            curr=next;
         }
 
-        System.out.println(s.val);
-
-
-        //reverce list up to mid
-
-       ListNode pre=null;
-       ListNode curr=head;
-       ListNode start=head;
-       ListNode midl=s.next;
-       
-
-        while(curr!=s){
-          ListNode n=curr.next;
-          curr.next=pre;
-          pre=curr;
-          curr=n;
-        }
-
-        start.next=midl;
+        //check if list size id even or odd
         if(size%2!=0){
-           s=s.next;
+            slow=slow.next;
         }
 
-        //check  it palindrome or not 
+        //at the end check first half to second half
 
-
-        while(s!=null){
-            if(pre.val==s.val){
-                s=s.next;
-                pre=pre.next;
+        while(slow!=null){
+            if(slow.val==prev.val){
+              slow=slow.next;
+              prev=prev.next;
             }else{
                 return false;
             }
