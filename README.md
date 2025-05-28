@@ -57,8 +57,17 @@
 | ------- |
 | [0206-reverse-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0206-reverse-linked-list) |
 | [0234-palindrome-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0234-palindrome-linked-list) |
+| [0795-k-th-symbol-in-grammar](https://github.com/Mantu008/Leetcode_Code/tree/master/0795-k-th-symbol-in-grammar) |
 ## Stack
 |  |
 | ------- |
 | [0234-palindrome-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0234-palindrome-linked-list) |
+## Math
+|  |
+| ------- |
+| [0795-k-th-symbol-in-grammar](https://github.com/Mantu008/Leetcode_Code/tree/master/0795-k-th-symbol-in-grammar) |
+## Bit Manipulation
+|  |
+| ------- |
+| [0795-k-th-symbol-in-grammar](https://github.com/Mantu008/Leetcode_Code/tree/master/0795-k-th-symbol-in-grammar) |
 <!---LeetCode Topics End-->
