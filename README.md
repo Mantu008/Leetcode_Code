@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
 | [0162-find-peak-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0162-find-peak-element) |
 | [0283-move-zeroes](https://github.com/Mantu008/Leetcode_Code/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/Mantu008/Leetcode_Code/tree/master/0287-find-the-duplicate-number) |
@@ -74,4 +75,12 @@
 | ------- |
 | [0287-find-the-duplicate-number](https://github.com/Mantu008/Leetcode_Code/tree/master/0287-find-the-duplicate-number) |
 | [0795-k-th-symbol-in-grammar](https://github.com/Mantu008/Leetcode_Code/tree/master/0795-k-th-symbol-in-grammar) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
+## Dynamic Programming
+|  |
+| ------- |
+| [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
 <!---LeetCode Topics End-->
