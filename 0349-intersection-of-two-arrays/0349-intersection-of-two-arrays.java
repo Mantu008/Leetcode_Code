@@ -1,34 +1,47 @@
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        List<Integer> intersection = new ArrayList<>();
-        find_Intersection(nums1, nums2, intersection);
-         int[] intersectionArray = new int[intersection.size()];
+        ArrayList<Integer> list = new ArrayList<>();
+        int m = nums1.length;
+        int n = nums2.length;
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+
         int i = 0;
-        for (int num : intersection) {
-            intersectionArray[i++] = num;
-        }
+        int j = 0;
 
-        return intersectionArray;
+        while (i < m && j < n) {
 
-    }
+            // Skip duplicates in nums1
+            while (i > 0 && i < m && nums1[i] == nums1[i - 1]) {
+                i++;
+            }
 
- public static void find_Intersection(int arr1[], int arr2[], List<Integer> intersection) {
+            // Skip duplicates in nums2
+            while (j > 0 && j < n && nums2[j] == nums2[j - 1]) {
+                j++;
+            }
 
-        List<Integer> set = new ArrayList<>();
+            if (i >= m || j >= n) break;
 
-        for (int num : arr1) {
-            if (!set.contains(num)) {
-                set.add(num);
+            if (nums1[i] < nums2[j]) {
+                i++;
+            } else if (nums1[i] > nums2[j]) {
+                j++;
+            } else {
+                list.add(nums1[i]);
+                i++;
+                j++;
             }
         }
 
-        for (int num : arr2) {
-            if (set.contains(num) && !intersection.contains(num)) {
-                intersection.add(num);
-            }
+        System.out.println(list);
+
+        int arr[] = new int[list.size()];
+
+        for (int p = 0; p < list.size(); p++) {
+            arr[p] = list.get(p);
         }
 
+        return arr;
     }
-
-
 }
