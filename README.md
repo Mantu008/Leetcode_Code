@@ -8,6 +8,7 @@
 | [0075-sort-colors](https://github.com/Mantu008/Leetcode_Code/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0088-merge-sorted-array) |
 | [0162-find-peak-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0162-find-peak-element) |
+| [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
 | [0189-rotate-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0189-rotate-array) |
 | [0283-move-zeroes](https://github.com/Mantu008/Leetcode_Code/tree/master/0283-move-zeroes) |
 | [0287-find-the-duplicate-number](https://github.com/Mantu008/Leetcode_Code/tree/master/0287-find-the-duplicate-number) |
@@ -42,6 +43,7 @@
 | [0141-linked-list-cycle](https://github.com/Mantu008/Leetcode_Code/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Mantu008/Leetcode_Code/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Mantu008/Leetcode_Code/tree/master/0160-intersection-of-two-linked-lists) |
+| [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0442-find-all-duplicates-in-an-array) |
 ## Sorting
@@ -49,6 +51,7 @@
 | ------- |
 | [0075-sort-colors](https://github.com/Mantu008/Leetcode_Code/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0088-merge-sorted-array) |
+| [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 ## Linked List
 |  |
@@ -88,8 +91,13 @@
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
+| [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
 ## Dynamic Programming
 |  |
 | ------- |
 | [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
+## Counting
+|  |
+| ------- |
+| [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
 <!---LeetCode Topics End-->
