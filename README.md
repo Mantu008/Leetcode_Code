@@ -14,6 +14,7 @@
 | [0287-find-the-duplicate-number](https://github.com/Mantu008/Leetcode_Code/tree/master/0287-find-the-duplicate-number) |
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 | [0442-find-all-duplicates-in-an-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0442-find-all-duplicates-in-an-array) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Mantu008/Leetcode_Code/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Binary Search
 |  |
 | ------- |
@@ -37,6 +38,7 @@
 | [0349-intersection-of-two-arrays](https://github.com/Mantu008/Leetcode_Code/tree/master/0349-intersection-of-two-arrays) |
 | [0908-middle-of-the-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/0908-middle-of-the-linked-list) |
 | [2216-delete-the-middle-node-of-a-linked-list](https://github.com/Mantu008/Leetcode_Code/tree/master/2216-delete-the-middle-node-of-a-linked-list) |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Mantu008/Leetcode_Code/tree/master/2271-rearrange-array-elements-by-sign) |
 ## Hash Table
 |  |
 | ------- |
@@ -100,4 +102,8 @@
 |  |
 | ------- |
 | [0169-majority-element](https://github.com/Mantu008/Leetcode_Code/tree/master/0169-majority-element) |
+## Simulation
+|  |
+| ------- |
+| [2271-rearrange-array-elements-by-sign](https://github.com/Mantu008/Leetcode_Code/tree/master/2271-rearrange-array-elements-by-sign) |
 <!---LeetCode Topics End-->
