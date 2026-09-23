@@ -4,6 +4,7 @@
 ## Array
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Mantu008/Leetcode_Code/tree/master/0001-two-sum) |
 | [0053-maximum-subarray](https://github.com/Mantu008/Leetcode_Code/tree/master/0053-maximum-subarray) |
 | [0075-sort-colors](https://github.com/Mantu008/Leetcode_Code/tree/master/0075-sort-colors) |
 | [0088-merge-sorted-array](https://github.com/Mantu008/Leetcode_Code/tree/master/0088-merge-sorted-array) |
@@ -42,6 +43,7 @@
 ## Hash Table
 |  |
 | ------- |
+| [0001-two-sum](https://github.com/Mantu008/Leetcode_Code/tree/master/0001-two-sum) |
 | [0141-linked-list-cycle](https://github.com/Mantu008/Leetcode_Code/tree/master/0141-linked-list-cycle) |
 | [0142-linked-list-cycle-ii](https://github.com/Mantu008/Leetcode_Code/tree/master/0142-linked-list-cycle-ii) |
 | [0160-intersection-of-two-linked-lists](https://github.com/Mantu008/Leetcode_Code/tree/master/0160-intersection-of-two-linked-lists) |
